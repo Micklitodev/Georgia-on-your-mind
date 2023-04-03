@@ -12,6 +12,13 @@ p {
   color: #022c22;
 }
 
+.map {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
 /* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */
