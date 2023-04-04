@@ -14,7 +14,7 @@ Review.init(
     date: {
         type: DataTypes.DATE,
     },
-    state_park: {
+    park: {
       type: DataTypes.STRING,
       allowNull: false,
       references: {

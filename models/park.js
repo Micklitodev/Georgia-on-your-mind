@@ -1,9 +1,9 @@
 const sequelize = require("../config/connection");
 const { Model, DataTypes } = require("sequelize");
 
-class StatePark extends Model {}
+class Park extends Model {}
 
-StatePark.init(
+Park.init(
   {
     id: {
       type: DataTypes.INTEGER,
@@ -45,4 +45,4 @@ StatePark.init(
   }
 );
 
-module.exports = StatePark;
+module.exports = Park;
