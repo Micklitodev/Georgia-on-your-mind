@@ -1,15 +1,19 @@
 const express = require('express');
 const app = express();
 
+module.exports = function(app){
 
+//the data from the request body using req.body and passes it to a function called processData() to process it. 
+//The result of the processing is then assigned to the result variable.
 app.post('/     ', (req, res) => {
   const data = req.body;
   const result = processData(data);
 
-
+// the function sends a JSON response back to the client with a 200 OK status code, containing a message property with a value of 'Success' 
+//and the processed data in the data property.
   res.status(200).json({ message: 'Success', data: result });
 });
-
+}
 
 
 
