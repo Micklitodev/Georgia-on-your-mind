@@ -17,6 +17,11 @@ Review.init(
     state_park: {
       type: DataTypes.STRING,
       allowNull: false,
+      references: {
+        model: "park",
+        key: "id",
+
+      }
     },
     user_id: {
       type: DataTypes.INTEGER,
