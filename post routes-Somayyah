@@ -1,0 +1,18 @@
+const express = require('express');
+const app = express();
+
+
+app.post('/     ', (req, res) => {
+  const data = req.body;
+  const result = processData(data);
+
+
+  res.status(200).json({ message: 'Success', data: result });
+});
+
+
+
+
+app.listen(3000, () => {
+  console.log('Server running on port 3000');
+});
