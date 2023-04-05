@@ -34,10 +34,10 @@ Review.init(
       type: DataTypes.STRING,
     },
     rating: {
-        type:DataType.INTEGER,
+        type:DataTypes.INTEGER,
     },
     content: {
-        type:DataType.STRING,
+        type:DataTypes.STRING,
     }
   },
   {
@@ -45,7 +45,7 @@ Review.init(
     freezeTableName: true,
     timestamps: false,
     underscored: true,
-    modelName: "comment",
+    modelName: "review",
   }
 );
 
