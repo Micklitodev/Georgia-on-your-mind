@@ -13,5 +13,18 @@ router.get("/", async (req, res) => {
   }
 });
 
+/// ------------------- render login page ----------------------------
+
+router.get("/login", async (req, res) => {
+  try {
+     res.sendFile(path.join(__dirname, "../views/login.html"))
+  } catch (err) {
+    console.log(err);
+    res.status(500).json(err);
+  }
+});
+
+
+
 module.exports = router;
  
