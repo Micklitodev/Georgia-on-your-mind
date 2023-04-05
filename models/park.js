@@ -28,11 +28,11 @@ Park.init(
       allowNull: false,
     },
     zip: {
-        type:DataType.INTEGER,
+        type:DataTypes.INTEGER,
         allowNull: false,
     },
     content: {
-        type:DataType.STRING,
+        type:DataTypes.STRING,
         allowNull:false,
     }
   },
