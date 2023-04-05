@@ -30,4 +30,4 @@ User.hasMany(Review, {
 
 
 
-module.exports = { User, }
+module.exports = { User,Park,Review }
