@@ -7,9 +7,9 @@
   
   /* Global styles */
   body {
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
+    font-family: 'Courier New', Courier, monospace
+    /* font-size: 16px;
+    line-height: 1.5; */
   }
   
   header {
@@ -23,6 +23,8 @@
     margin: 0;
     padding: 0;
     text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    
   }
   
   nav ul li {
@@ -53,6 +55,7 @@
     top: 50%;
     left: 75%;
     transform: translate(-50%, -50%);
+    font-family: 'Courier New', Courier, monospace;
     text-align: right;
     color: black;
   }
@@ -93,4 +96,105 @@
     padding: 10px 0;
     text-align: center;
   }
+
+  /* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+   */
+
+  
+  .login-box {
+    width: 320px;
+    height: 420px;
+    background: #fff;
+    color: #000;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 70px 30px;
+    border-radius: 10px;
+  }
+  
+  .login-box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    text-align: center;
+    font-size: 24px;
+  }
+  
+  .login-box form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .user-box {
+    position: relative;
+    margin: 20px 0;
+  }
+  
+  .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 2px solid #000;
+    outline: none;
+    background: transparent;
+  }
+  
+  .user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #000;
+    pointer-events: none;
+    transition: 0.5s;
+  }
+  
+  .user-box input:focus ~ label,
+  .user-box input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #000;
+    font-size: 14px;
+  }
+  
+  .login-box a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #000;
+    margin-top: 30px;
+    transition: 0.5s;
+  }
+  
+  .login-box a:hover {
+    color: #777;
+  }
+  
+  .login-box input[type="submit"] {
+    background: #000;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 15px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-top: 30px;
+    transition: 0.5s;
+  }
+  
+  .login-box input[type="submit"]:hover {
+    background: #777;
+  }
+  
   
