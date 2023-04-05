@@ -1,12 +1,10 @@
-// console.log("hittheloginpage");
-
-const submitButton = document.getElementById("submit");
+const submitButton = document.getElementById("submit"); //target the submit button
 
 submitButton.addEventListener("click", async (e) => {
   e.preventDefault();
 
-  const userName = document.getElementById("username").value;
-  const password = document.getElementById("password").value;
+  const userName = document.getElementById("username").value;//get user-input value for username
+  const password = document.getElementById("password").value;//get user-input value for password
 
   await fetch("/api/login", {
     method: "POST",
@@ -24,4 +22,5 @@ submitButton.addEventListener("click", async (e) => {
       window.location.href = "/";
     }
   });
+  console.log("Submitted!")
 });
