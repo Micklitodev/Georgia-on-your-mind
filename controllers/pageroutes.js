@@ -24,6 +24,17 @@ router.get("/login", async (req, res) => {
   }
 });
 
+/// ------------------- render signup page ----------------------------
+
+router.get("/signup", async (req, res) => {
+  try {
+     res.sendFile(path.join(__dirname, "../views/signup.html"))
+  } catch (err) {
+    console.log(err);
+    res.status(500).json(err);
+  }
+});
+
 
 
 module.exports = router;
