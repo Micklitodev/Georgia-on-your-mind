@@ -41,7 +41,7 @@ Park.init(
     freezeTableName: true,
     timestamps: false,
     underscored: true,
-    modelName: "comment",
+    modelName: "park",
   }
 );
 

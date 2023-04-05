@@ -17,10 +17,11 @@ Park.hasMany(Review, {
 //Reviews belong to Users
 Review.belongsTo(User, {
     foreignKey: 'userid',
+    onDelete: 'CASCADE',
 });
 
 //Users have many reviews
-User.belongTo(Review, {
+User.hasMany(Review, {
     foreignKey: 'userid',
     onDelete: "CASCADE",
 })
