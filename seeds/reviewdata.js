@@ -2,7 +2,6 @@ const { Review } = require('../models');
 
 const reviewData = [
     {
-        date: "01/23/2023",
         park: 1,
         user_id: 1,
         user_name: 'test1212',
