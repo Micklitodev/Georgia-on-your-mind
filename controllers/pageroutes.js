@@ -6,6 +6,16 @@ const path = require('path')
 
 router.get("/", async (req, res) => {
   try {
+     res.sendFile(path.join(__dirname, "../views/landing.html"))
+  } catch (err) {
+    console.log(err);
+    res.status(500).json(err);
+  }
+});
+
+
+router.get("/home", async (req, res) => {
+  try {
      res.sendFile(path.join(__dirname, "../views/index.html"))
   } catch (err) {
     console.log(err);
