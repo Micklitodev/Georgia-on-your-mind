@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Georgia State Parks Comment and Review Spot</title>
+</head>
+<body>
+  <h1>Georgia on Your Mind?</h1>
+  <h2>Georgia State Parks Comment and Review Spot</h2>
+  <p><strong>Read a comment / Leave a comment</strong></p>
+
+  <!-- Button to open the modal login form -->
+  <button onclick="document.getElementById('id01').style.display='block'">Login</button>
+
+  <br><br>
+  <img src="https://gastateparks.org/sites/default/files/parks/images/webmaps/webmap-2023-02.png" alt="Map of Georgia state parks" class="map">
+
+  <a href="/login">Login</a>
+  <a href="/signup">Signup</a>
+  <a href="/logout">logout</a>
+
+
+  <hr>
+
+  {{#each comments}}
+    <div>
+      <h3>{{this.title}}</h3>
+      <p>{{this.content}}</p>
+    </div>
+  {{/each}}
+
+  <hr>
+
+  <form action="XXXXXXXX" method="POST">
+    <label for="parkname">Park Name:</label>
+    <input type="text" id="title" name="title" required>
+
+    <br><br>
+
+    <label for="content">Comments:</label>
+    <textarea id="comments" name="comments" required></textarea>
+
+    <br><br>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <script>
+    //js here
+  </script>
+
+</body>
+</html>
