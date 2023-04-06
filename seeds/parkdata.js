@@ -84,7 +84,86 @@ const parkdata = [
         content: `James H. Floyd State Park is a 561-acre (2.27 km²) Georgia State Park located near Summerville at the base of Taylor Ridge (Georgia). The park is named after Democrat James H. "Sloppy" Floyd who served in the 
         Georgia House of Representatives from 1953 until 1974 and was from the area.`
     },
-
+    {
+        name: 'Amicalola Falls State Park & Lodge',
+        county: 'Dawson',
+        image: 'https://www.amicalolafallslodge.com/wp-content/uploads/2019/07/amicalola-header-blog.jpg',
+        content: `Amicalola Falls State Park & Lodge has four groups of trails within it, 
+        including the trail leading up to the top of the waterfall. The park has a lodge that serves as a starting point for Appalachian Trail hikers. The park also checks in guests for a nearby facility called the Len Foote Hike Inn, a backcountry eco-friendly inn that is 5 miles from the park, one mile from the Appalachian Approach trail and 4.4 miles from Springer Mountain.`
+    },
+    {
+        name: 'Black Rock Mountain State Park',
+        county: 'Rabun',
+        image: 'https://d3qvqlc701gzhm.cloudfront.net/full/6c34cb0554f4d622cd08e6e4222779c0de3e86e8503b5b5d77689d8a5b003ce8.jpg',
+        content: `Black Rock Mountain State Park is a 1,743-acre (705 ha) Georgia, United States, state park west of Mountain City in Rabun County, in the Blue Ridge Mountains. It is named after its sheer cliffs of dark-colored biotite gneiss. Astride the Eastern Continental Divide at an elevation of 3,640 feet (1,110 m), the park provides many scenic overlooks and 80-mile (130 km) vistas of the southern Appalachian Mountains. On a clear day, four states are visible: Georgia, North Carolina, South Carolina, and Tennessee. In addition to Black Rock Mountain itself, the park includes four other peaks over 3,000 feet (910 m) in elevation, making it the state's highest state park. As of 2019, it was open to visitors year round.`
+    },
+    {
+        name: 'Chattahoochee Bend State Park',
+        county: 'Coweta',
+        image: 'https://gastateparks.org/sites/default/files/styles/locationslidestyle/public/parks/locationslideshow/ChattahoocheeBendBoating_0.jpg?itok=i_4QwU_5',
+        content: `The state of Georgia first purchased the land for the park in 1999. In 2006, the state approved $7 million for the first phase of park development.[2] Beginning in 2008, the Friends of Chattahoochee Bend organization began hosting work days to aid in the development of the park. The park was opened to the public on July 1, 2011. It was the first new state park to open since Tallulah Gorge State Park in 1993.
+        `
+    },
+    {
+        name: 'Cloudland Canyon State Park',
+        county: 'Dade',
+        image: 'https://gastateparks.org/sites/default/files/styles/locationslidestyle/public/parks/locationslideshow/CloudandCanyon2.jpg?itok=Ym2cTXQ7',
+        content: `Cloudland Canyon State Park is located on the western edge of Lookout Mountain and is one of the largest and most scenic parks in the state.It features thousand-foot deep canyons, sandstone cliffs, wild caves, waterfalls, cascading creeks, dense woodland and abundant wildlife for outdoor recreation. Visitors can discover nature's role through the ages surrounded by breathtaking vistas of the Cumberland Plateau.`
+    },
+    {
+        name: 'Crooked River State Park',
+        county: 'Camden',
+        image: 'https://gastateparks.org/sites/default/files/styles/locationslidestyle/public/parks/locationslideshow/crooked-river-banner-dock_0.jpg?itok=W_5uMQ6-',
+        content: `Crooked River State Park is located just 5 miles north of the Florida/Georgia state line and is the perfect place to camp if you are planning a trip over to Cumberland Island National Seashore. Campsites and cottages are surrounded by palmettos and Spanish moss-draped oaks, while a boat ramp is popular with anglers who often take their boats there.`
+    },
+    {
+        name: 'Don Carter State Park',
+        county: 'Hall',
+        image: 'https://d3qvqlc701gzhm.cloudfront.net/full/a5e3b68450daaf1b78baf74c209aea29a528d1ffc0e686f66c08f33ea39100f3.jpg',
+        content: `Don Carter State Park is located on 38,000-acre Lake Lanier and is the only state park on this reservoir. It offers a variety of recreational activities for visitors, such as boat ramps for quick access to the Chattahoochee River, a multi-use trail for hikers and bikers to explore hardwood forests, a large sand swimming beach with bath house for guests to stay cool during the summer months.`
+    },
+    {
+        name: 'Elijah Clark State Park',
+        county: 'Lincoln',
+        image: 'https://gastateparks.org/sites/default/files/styles/locationslidestyle/public/parks/locationslideshow/ElijahClark_0.jpg?itok=bcZY93ch',
+        content: `Elijah Clark State Park is located on the western shore of 71,100-acre Clarks Hill Lake, one of the largest lakes in the Southeast. It is named for a frontiersman and Georgia war hero who led pioneers during the Revolutionary War. A log cabin replica displays furniture, utensils and tools circa 1780 and is open weekends April through November. Visitors can also view the graves of Clark and his wife, Hannah.`
+    },
+    {
+        name: 'Etowah Indian Mounds State Historic Site',
+        county: 'Bartow',
+        image: 'https://gastateparks.org/sites/default/files/styles/locationslidestyle/public/parks/locationslideshow/EtowahIndianMounds.jpg?itok=BCIJ0lsr',
+        content: `Etowah Indian Mounds State Historic Site is a 54-acre Mississippian culture site in the southeastern United States, home to several thousand Native Americans from 1000 A.D. to 1550 A.D., featuring six earthen mounds, a plaza, village site, borrow pits and defensive ditches. It symbolizes a society rich in ritual with its 63-foot flat-topped earthen knoll used as a platform for the home of the priest-chief; nobility were buried in elaborate costumes accompanied by items they would need in their after-lives; only 9 percent has been excavated but examination has revealed much about the people who lived here more than 500 years ago.`
+    },
+    {
+        name: 'F. D. Roosevelt State Park',
+        county: 'Harris',
+        image: 'https://gastateparks.org/sites/default/files/styles/locationslidestyle/public/parks/locationslideshow/FDRoosevelt.jpg?itok=w06wyUJW',
+        content: `Franklin D. Roosevelt State Park is a 9,049-acre state park located approximately 40 miles southeast of New York City. It offers day-trippers a day of fun and relaxation with spacious picnic areas that can be reserved in advance, as well as more than 40 miles of hiking and backpacking trails. Dowdells Knob, where President Franklin D.Roosevelt sometimes picnicked and pondered world affairs, has a life-size sculpture of the president now welcoming visitors to the overlook.`
+    },
+    {
+        name: 'Florence Marina State Park',
+        county: 'Stewart',
+        image: 'https://gastateparks.org/sites/default/files/styles/locationslidestyle/public/parks/locationslideshow/FlorenceMarina_0.jpg?itok=589IHb8B',
+        content: `Florence Marina State Park is a 45,000-acre state park located at the northern end of Lake Walter F. George (also called Lake Eufaula). It was once home to Native Americans and the old town of Florence. Visitors can experience its agricultural and commercial past by walking forested trails, visiting the Kirbo Interpretive Center, or fishing from its natural deep-water marina.`
+    },
+    {
+        name: 'Fort King George State Historic Site',
+        county: 'McIntosh',
+        image: 'https://imgs.search.brave.com/JK8x8QCLboIjbc0ftcc8cjaraWq1mpR8ihGj7tuJDp4/rs:fit:550:413:1/g:ce/aHR0cHM6Ly9tZWRp/YS1jZG4udHJpcGFk/dmlzb3IuY29tL21l/ZGlhL3Bob3RvLXMv/MWEvZTMvMTcvOGEv/Zm9ydHJlc3MuanBn',
+        content: `Fort King George State Historic Site is located in McIntosh County, adjacent to Darien. It was built in 1721 along what is now known as the Darien River and served as the southernmost outpost of the British Empire in North America from 1721 until 1736.3 A cypress blockhouse, barracks and palisaded earthen fort were constructed by scoutmen led by Colonel John “Tuscarora Jack” Barnwell during this time period.124 It is the oldest English fort remaining on Georgias coast.`
+    },
+    {
+        name: 'Fort McAllister State Park',
+        county: 'Bryan',
+        image: 'https://gastateparks.org/sites/default/files/styles/locationslidestyle/public/parks/locationslideshow/FortMcAllister-banner4.jpg?itok=-VOhODK6',
+        content: `Fort McAllister State Park is located close to I-95 south of Savannah on the banks of the Ogeechee River. It showcases the best-preserved earthwork fortification of the Confederacy, which was attacked seven times by Union ironclads but did not fall until 1864—ending General William T. McAllister's presidency. The park has been connected to Native American life, Civil War soldiers and Henry Ford Era visitors for centuries.`
+    },
+    {
+        name: 'Fort Morris State Historic Site',
+        county: 'Liberty',
+        image: 'https://gastateparks.org/sites/default/files/styles/locationslidestyle/public/parks/locationslideshow/FortMorris.jpg?itok=6GcKOQP4',
+        content: `Fort Morris State Historic Site was originally a Guale Indian village and became the seaport town of Sunbury in 1776. During both the Revolutionary War and the War of 1812, Fort Morris was used as a coastal fortification to protect Georgia's coast. The earthen works were reconstructed during this time.`
+    },
 
 
     
