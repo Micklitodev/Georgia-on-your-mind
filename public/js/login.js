@@ -3,7 +3,7 @@ const submitButton = document.getElementById("submit"); //target the submit butt
 submitButton.addEventListener("click", async (e) => {
   e.preventDefault();
 
-  const userName = document.getElementById("username").value;//get user-input value for username
+  const email = document.getElementById("email").value;//get user-input value for email
   const password = document.getElementById("password").value;//get user-input value for password
 
   await fetch("/api/login", {
@@ -13,7 +13,7 @@ submitButton.addEventListener("click", async (e) => {
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
-      username: userName,
+      email: email,
       password: password,
     }),
   }).then((res) => {
