@@ -14,8 +14,8 @@ Review.init(
     date: {
         type: DataTypes.DATE,
     },
-    park: {
-      type: DataTypes.STRING,
+    park_id: {
+      type: DataTypes.INTEGER,
       allowNull: false,
       references: {
         model: "park",
