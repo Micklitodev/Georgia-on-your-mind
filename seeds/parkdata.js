@@ -164,6 +164,84 @@ const parkdata = [
         image: 'https://gastateparks.org/sites/default/files/styles/locationslidestyle/public/parks/locationslideshow/FortMorris.jpg?itok=6GcKOQP4',
         content: `Fort Morris State Historic Site was originally a Guale Indian village and became the seaport town of Sunbury in 1776. During both the Revolutionary War and the War of 1812, Fort Morris was used as a coastal fortification to protect Georgia's coast. The earthen works were reconstructed during this time.`
     },
+    {
+        name: 'Jefferson Davis Memorial Historic Site',
+        county: 'Irwin',
+        image: 'https://parks.ky.gov/sites/default/files/listing_images/profile/19/28af31ced514e722f68bf95278db81e9_sliderjeffdavismonument.jpg',
+        content: `Jefferson Davis Memorial Historic Site is a 12.668-acre state historic site located in Irwin County, Georgia that marks the spot where Confederate States President Jefferson Davis was captured by United States Cavalry on Wednesday, May 10, 1865. The historic site features a granite monument with a bronze bust of Davis that is located at the place of capture.The memorial museum, built in 1939 by the Works Progress Administration, features Civil War era weapons, uniforms, artifacts and an exhibit about the president's 1865 flight from Richmond, Virginia to Irwin County, Georgia.`
+    },
+    {
+        name: 'Kolomoki Mounds',
+        county: 'Early',
+        image: 'https://upload.wikimedia.org/wikipedia/commons/b/b3/Kolomoki-temple-mound.jpg',
+        content: `The Kolomoki Mounds is one of the largest and earliest Woodland period earthwork mound complexes in the Southeastern United States[3] and is the largest in Georgia. Constructed from 350CE to 600CE, the mound complex is located in southwest Georgia, in present-day Early County near the Chattahoochee River.`
+    },
+    {
+        name: 'Laura S. Walker State Park',
+        county: 'Ware',
+        image: 'https://gastateparks.reserveamerica.com/webphotos/GA/pid530177/0/540x360.jpg',
+        content: `Laura S. Walker State Park is a 626-acre state park in the U.S. state of Georgia. Located near Hoboken and the Okefenokee Swamp, the park is named after Laura S. Walker, a Georgia writer, teacher, civic leader, and naturalist . The park's location near the Okefenokee makes it home to many exotic plant and animal species, including alligators, great blue herons, and pitcher plants. The park includes a 120-acre lake and a championship 18-hole golf course with a pro shop.`
+    },
+    {
+        name: 'Little Ocmulgee State Park',
+        county: 'Telfair',
+        image: 'https://www.littleocmulgeelodge.com/wp-content/uploads/2019/06/state-park-grid-Lake-8990.jpg',
+        content: `Little Ocmulgee State Park and Lodge is a 1,360-acre Georgia state park located 2 miles north of McRae-Helena on the Little Ocmulgee River. Part of the park was initially built by the Civilian Conservation Corps during the Great Depression, around the natural diversion of the Little Ocmulgee into a lake. This is a 256-acre lake with beach, and the park includes a 60 room lodge and a championship 18-hole golf course with pro shop, known as the Wallace Adams Memorial Golf Course.[1] The soil around the Ocmulgee River and the Little Ocmulgee is a fine white sand, and therefore the lake has its own "beach sand". Also within the park is the 2.6-mile long Oak Ridge Trail, allowing visitors to see native wildlife and plants.`
+    },
+    {
+        name: 'Magnolia Springs State Park',
+        county: 'Jenkins',
+        image: 'https://www.georgiaencyclopedia.org/wp-content/uploads/2021/02/magnolia-springs-state-park_001.jpg',
+        content: `Magnolia Springs State Park is a 1,070-acre Georgia state park located between Perkins and Millen in Jenkins County. The park was built as a project of the Civilian Conservation Corps and opened in 1939. The park is well known for its crystal clear springs that are estimated to flow 7 million US gallons per day. The park also offers unique wildlife near the springs, including alligators, turtles, and a variety of birds and fish.`
+    },
+    {
+        name: 'Mistletoe State Park',
+        county: 'Columiba',
+        image: 'https://d3qvqlc701gzhm.cloudfront.net/thumbs/f139ecf4501da037df68c7c42525ad435fbc4b9d23a3c08e2c520b1256115f29-750.jpg',
+        content: `Mistletoe State Park is a 1,972 acre Georgia state park located northwest of Augusta, Georgia on the southern shore of Lake Strom Thurmond. The park gets its name from Mistletoe Corners,[1] a local area where people gather to pick mistletoe during the winter holiday season. Its strategic location on the lake makes it one of the finest bass fishing spots in the nation. The park also offers public beaches and 8 miles of nature trails. The land on which the park is located is leased to Georgia by the United States Army Corps of Engineers.`
+    },
+    {
+        name: 'Moccasin Creek State Park',
+        county: 'Rabun',
+        image: 'https://blueridgemountainstravelguide.com/wp-content/uploads/2021/03/Lake-Burton-Boathouse-at-Moccasin-Creek-State-Park.jpg',
+        content: `Moccasin Creek State Park is a 32-acre state park located on the western shore of Lake Burton in Rabun County in the northeast corner of Georgia. The park features campgrounds; a fishing pier for the physically disabled, the elderly, and children; and walking trails. Even though the surrounding area is mountainous, the camping area is relatively flat.`
+    },
+    {
+        name: 'Panola Mountain',
+        county: 'Henry',
+        image: 'https://www.atlantatrails.com/wp-content/uploads/2018/01/panola-mountain-state-park-03.jpg',
+        content: `Panola Mountain is a 100-acre granite monadnock near Stockbridge on the boundary between Henry County and Rockdale County, Georgia. The peak is 946 feet above sea level, rising 260 feet above the South River. The South River marks the boundary between Henry, Rockdale, and DeKalb counties. Due to its delicate ecological features, Panola Mountain was designated a National Natural Landmark in 1980`
+    },
+    {
+        name: 'Picketts Mill Battlefield Site',
+        county: 'Paulding',
+        image: 'https://www.georgiaencyclopedia.org/wp-content/uploads/2021/02/battle-of-picketts-mill_003.jpg',
+        content: `Pickett's Mill Battlefield Site is a Georgia state park in Paulding County, Georgia that preserves the American Civil War battlefield of the Battle of Pickett's Mill. The 765-acre site includes roads used by Union and Confederate troops, earthwork battlements, and an 1800s era pioneer cabin. The area's ravine is a site where hundreds died. The park's visitor center includes exhibits and a film about the battle.`
+    },
+    {
+        name: 'Providence Canyon State Park',
+        county: 'Steward',
+        image: 'https://365atlantatraveler.com/wp-content/uploads/2022/05/Providence-Canyon.jpeg',
+        content: `Providence Canyon State Outdoor Recreation Area is a 1,003-acre Georgia state park located in Stewart County in southwest Georgia, United States.[2] The park contains Providence Canyon, which is sometimes called Georgia's "Little Grand Canyon". It is considered one of the Seven Natural Wonders of Georgia. It is also home to the very rare plumleaf azalea.`
+    },
+    {
+        name: 'Red Top Mountain State Park',
+        county: 'Bartow',
+        image: 'https://acworthtourism.org/wp-content/uploads/2021/10/red-top-lake-allatoona.jpg',
+        content: `Red Top Mountain State Park is a state park in the U.S. state of Georgia. It is located in the northwestern part of the state, on the northwestern edge of metro Atlanta, in southeastern Bartow County near Cartersville. Named for iron-rich Red Top Mountain,[1] the park covers 1,776 acres on a peninsula jutting north into Lake Allatoona, formed on the park's north and east sides by the Etowah River arm and on the west by Allatoona Creek arm.`
+    },
+    {
+        name: 'Reed Bingham State Park',
+        county: 'Colquitt',
+        image: 'https://friendsofgastateparks.org/sites/default/files/import/field/image/ReedBingham-042614-0534-X2.jpg',
+        content: `Reed Bingham State Park is a 1,613 acre Georgia state park in Colquitt County and Cook County located 5 miles east of Ellenton. The park surrounds a 375 acre lake that is a tourist attraction in southern Georgia. Inside the park, visitors can hike the 3.5 mile long Coastal Plains Nature Trail, which goes through a baldcypress swamp, a pitcher plant bog, and sandhill area. The park also contains many animals, including the threatened gopher tortoise and the indigo snake. In addition, the park offers camping and fishing with special ponds for kids that are only open on specific dates.`
+    },
+    {
+        name: 'richard b. russell state park',
+        county: 'Elbert',
+        image: 'https://api.trekaroo.com/system/photos/189109/original/2014-03-20_18.05.24.jpg?1493798311',
+        content: `Richard B. Russell State Park is a 2,508 acres state park located on the shore of Richard B. Russell Lake in Elbert County, Georgia. The park features the 18-hole Arrowhead Golf Course, as well as picnic shelters and a swimming beach.`
+    },
 
 
     
