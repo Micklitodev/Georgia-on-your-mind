@@ -242,6 +242,78 @@ const parkdata = [
         image: 'https://api.trekaroo.com/system/photos/189109/original/2014-03-20_18.05.24.jpg?1493798311',
         content: `Richard B. Russell State Park is a 2,508 acres state park located on the shore of Richard B. Russell Lake in Elbert County, Georgia. The park features the 18-hole Arrowhead Golf Course, as well as picnic shelters and a swimming beach.`
     },
+    {
+        name: "Seminole State Park",
+        county: "Seminole",
+        image: "https://gastateparks.org/sites/default/files/styles/locationslidestyle/public/parks/locationslideshow/Seminole1.jpg?itok=MHx0pEhy",
+        content: "Seminole State Park is a 604 acre (2.44 km2) state park located on the shores of Lake Seminole in the extreme southwest corner of Georgia. The park offers excellent fishing opportunities on the lake, as well as a tranquil getaway in one of the park's cottages or campsites."
+        },
+        {
+        name: "Skidaway Island State Park",
+        county: "Chatham",
+        image: "https://gastateparks.org/sites/default/files/styles/locationslidestyle/public/parks/locationslideshow/SkidawayIsland.jpg?itok=AJYB0z8z",
+        content: "Skidaway Island State Park is a state park near Savannah, Georgia. The park borders Skidaway narrows, a part of Georgia’s intracoastal waterway. Trails wind through maritime forest and past salt marsh, leading to a boardwalk and observation tower. Visitors can watch for deer, fiddler crabs, raccoon, egrets and other wildlife"
+        },
+        {
+        name: "Smithgall Woods State Park",
+        county: "White",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh1eyUDf2vUjl5URp4KtWnmvF8armkcmNuQQ&usqp=CAU",
+        content:"Smithgall Woods Conservation Area and Lodge is a 5,664 acres (8.85 sq mi; 22.92 km2) Georgia state park, lodge and protected wilderness area near Helen, Georgia. It contains old growth forests, 12 miles of trout streams, and populations of wild turkeys, bears and deer."
+        },
+        {
+        name: "Standing Boy Creek State Park",
+        county: "Muscogee",
+        image: "https://gastateparks.org/sites/default/files/styles/locationslidestyle/public/parks/locationslideshow/standingboycreek-1.jpg?itok=2OOfmb9d",
+        content: "Standing Boy Creek State Park is a 1,579 acres (6.39 km2) Georgia state park located in Columbus. The executive order creating the park was issued by then-Governor Sonny Perdue on January 21, 2004. Attractions in the park include swimming, boating (on Lake Oliver), hiking, and hunting."
+        },
+        {
+        name: "Stephen C. Foster State Park",
+        county: "Charlton",
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Cypresses_on_the_water.jpg/330px-Cypresses_on_the_water.jpg",
+        content:"Stephen C. Foster State Park is an 120-acre (49 ha) state park located in the Okefenokee Swamp in Charlton County, Georgia. the park offers visitors several ways to explore the swamp's unique ecosystem"
+        },
+        {
+        name: "Sweetwater Creek State Park",
+        county: "Douglas",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO9zwp9VPWUleJSNdlwRTfZslvDO-xcxQCvw&usqp=CAU",
+        content:"Sweetwater Creek State Park is a 2,549 acres (10.32 km2) Georgia state park in east Douglas County, 15 miles (24 km) from downtown Atlanta. The park is named after Sweetwater Creek which runs through it. The park features wooded walking and hiking trails, the George Sparks Reservoir, a visitor center, a bait shop, and a gift shop, as well as the ruins of the New Manchester Manufacturing Company."
+        },
+        {
+        name: "Tallulah Gorge State Park",
+        county: "Rabun, Habersham",
+        image: "https://gastateparks.org/sites/default/files/styles/locationslidestyle/public/locationslideshow/TallulahGorge.jpg?itok=vIYmsog1",
+        content: "Tallulah Gorge State Park is a 2,689-acre (1,088 ha) Georgia state park adjacent to Tallulah Falls, Georgia, along the county line between Rabun and Habersham Counties. The park surrounds Tallulah Gorge, a 1,000-foot (300 m) deep gorge formed by the action of the Tallulah River, which runs along the floor of the gorge. The major attractions of the gorge are the six waterfalls known as the Tallulah Falls, which cause the river to drop 500 feet over one mile (150 m over 1.6 km)."
+        },
+        {
+        name: "Tugaloo State Park",
+        county: "Franklin",
+        image: "https://upload.wikimedia.org/wikipedia/en/thumb/3/3a/Tugaloo_State_Park_Beach.jpg/750px-Tugaloo_State_Park_Beach.jpg",
+        content: "Tugaloo State Park is a 393 acres (1.59 km2) state park located on the shore of Lake Hartwell in Franklin County, Georgia. The park features a swimming beach, boat ramps, and ample fishing opportunities, and is located near S.R. 328 north of Lavonia."
+        },
+        {
+        name: "Unicoi State Park & Lodge",
+        county: "White",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSHrhe57jIfMjN6YeLJpZoITgGtiMLIpj9zKM-5Dt0xA&s",
+        content:"Unicoi State Park & Lodge is a 1,050-acre (4.2 km2) state park (est. in 1954) located immediately north-northeast of Helen, Georgia in the northeastern portion of the state. The centerpiece of the park is 53-acre (21 ha) Unicoi Lake on Smith Creek. The park is especially popular in October, when the autumn leaves in the forest change colors."
+        },
+        {
+        name: "Victoria Bryant State Park",
+        county: "Franklin",
+        image: "https://gastateparks.reserveamerica.com/webphotos/GA/pid530200/0/",
+        content:"Victoria Bryant State Park is a 502-acre (2.03 km2) Georgia state park located near Franklin Springs.[1] Nestled in the rolling hills of Georgia's Piedmont plateau, this park offers facilities ranging from picnic sites and a swimming pool to an 18-hole golf course. The North Fork of the Broad River flows through the park, adding several water hazards to the course"
+        },
+        {
+        name: "Vogel State Park",
+        county: "Union",
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Lake_Trahlyta%2C_Vogel_State_Park%2C_Oct_2016_1.jpg/1920px-Lake_Trahlyta%2C_Vogel_State_Park%2C_Oct_2016_1.jpg",
+        content: "Vogel State Park is located in the north Georgia mountains and offers visitors a chance to experience the beauty of the area. The park features hiking trails, a lake for fishing and boating, picnic areas, and campsites for overnight stays. Vogel State Park is a popular destination for families and outdoor enthusiasts alike."
+        },
+        {
+        name: "Watson Mill Bridge State Park",
+        county: "Madison",
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Watson_mill_state_park.jpg/2560px-Watson_mill_state_park.jpg",
+        content: "Watson Mill Bridge State Park is home to one of the longest and tallest covered bridges in Georgia. The park features hiking trails, picnic areas, and campsites for visitors to enjoy. Visitors can also fish in the nearby river or take a guided horseback ride through the park. Watson Mill Bridge State Park is a great place to relax and enjoy the natural beauty of Georgia."
+        }
 
 
     
