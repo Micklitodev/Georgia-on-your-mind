@@ -15,21 +15,13 @@ Park.init(
         type: DataTypes.STRING,
         allowNull: false,
     },
-    address: {
+    county: {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    city: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
-    state: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
-    zip: {
-        type:DataTypes.INTEGER,
-        allowNull: false,
+    image: {
+        type:DataTypes.STRING,
+        allowNull:false,
     },
     content: {
         type:DataTypes.TEXT,
