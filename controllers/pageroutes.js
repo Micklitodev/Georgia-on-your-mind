@@ -1,5 +1,5 @@
 const router = require("express").Router();
-// const { Park } = require("../models");
+const { Park } = require("../models");
 const path = require('path')
 
 /// ------------------------- render landing page ------------------------- 
@@ -44,6 +44,22 @@ router.get("/signup", async (req, res) => {
     res.status(500).json(err);
   }
 });
+
+/// ----------------- Render All Parks -------------------------------
+
+
+router.get('/home', async (req, res) => {
+  try{
+    const allPark = await Park.findAll()
+    const parks = allPark.map((place) => place.get({plain: true}))
+    
+    res.status(200).render('homepage', { parks })
+  }catch(err) {
+    console.log(err) 
+    res.status(500).json(err)
+  }
+})
+
 
 
 
