@@ -24,12 +24,12 @@
 
 <div>
     {{#each parks as | park|  }}
-    <div>
+    <a href="/park/{{park.id}}">
         <h2>{{park.name}} </h2>
         <div>{{park.county}} </div>
         <img class="parksimg" src="{{park.image}}">
         <p> {{park.content}} </p>
-    </div>
+    </a>
     {{/each}}
 </div>
 
