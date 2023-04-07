@@ -13,13 +13,14 @@ btn.addEventListener("click", async (e) => {
   const email = document.getElementById('email').value;
   const password = document.getElementById('password').value;
 
+
   await fetch("/api/signup", {
     method: "POST",
     headers: {
       Accept: "application/json, text/plain, */*",
       "Content-Type": "application/json",
     },
-    body: JSON.stringify({
+    body: JSON.stringify({ 
       username: username,
       email: email,
       password: password,

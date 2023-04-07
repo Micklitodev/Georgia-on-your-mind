@@ -1,4 +1,4 @@
-
+console.log('LOGOUT IS HITTING')
 const btn = document.getElementById("logOut");
 
 btn.addEventListener("click", async (e) => {
