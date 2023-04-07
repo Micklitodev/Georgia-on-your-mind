@@ -4,13 +4,13 @@
     <img src="{{image}}">
     <p> {{content}} </p>
 
-  {{#each comments}}
+  {{#each review as |review|}}
     <div>
-      <h3>{{this.title}}</h3>
-      <p>{{this.content}}</p>
+      <p>{{review.rating}}</p>
+      <p>{{review.content}}</p>
     </div>
   {{/each}}
 
 </div>
 
- <script src="../js/review.js"></script>
+ <script src="../js/review.js"></script> 
