@@ -5,6 +5,9 @@ reviewBtn.addEventListener("click", async (e) => {
 
   const rating = document.getElementById("rating").value;
   const content= document.getElementById("reviewContent").value;
+  const url= windoe.location.href;
+  const data=url.split("/");
+  const park_id=data[data.length-1];
 
 
   await fetch("/api/review", {
@@ -16,6 +19,7 @@ reviewBtn.addEventListener("click", async (e) => {
     body: JSON.stringify({
       rating: rating,
       content: content,
+      park_id:park_id
     }),
   }).then((res) => {
     console.log(res);
