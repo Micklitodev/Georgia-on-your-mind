@@ -3,7 +3,7 @@ const { Review } = require("../../models");
 
 // ------------ create a comment -------------
 
-router.post("/newReview", async (req, res) => {
+router.post("/newreview", async (req, res) => {
 
   try {
     const newRev = await Review.create({
@@ -12,7 +12,7 @@ router.post("/newReview", async (req, res) => {
         rating: req.body.rating,
         content: req.body.content,
     });
-    res.status(200).json(newComm);
+    res.status(200).json(newRev);
   } catch (err) {
     console.log(err);
     res.status(500).json(err);
