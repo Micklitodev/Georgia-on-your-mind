@@ -3,7 +3,7 @@ const { User } = require("../../models");
 
 // destroy session or logout
 
-router.post("/api/logout", (req, res) => {
+router.delete("/logout", (req, res) => {
   if (req.session.loggedIn) {
     req.session.destroy(() => {
       res.status(204).end();
@@ -17,7 +17,7 @@ router.post("/api/logout", (req, res) => {
 
 // create new user
 
-router.post("/api/signup", (req, res) => {
+router.post("/signup", (req, res) => {
   try {
     const createUser = User.create({
       user_name: req.body.username,
@@ -40,7 +40,7 @@ router.post("/api/signup", (req, res) => {
 
 //login route 
 
-router.post("/api/login", async (req, res) => {
+router.post("/login", async (req, res) => {
   try {
     const getUser = await User.findOne({
       where: {

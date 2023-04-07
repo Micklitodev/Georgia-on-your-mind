@@ -14,15 +14,6 @@ router.get("/", async (req, res) => {
 });
 
 
-router.get("/home", async (req, res) => {
-  try {
-     res.sendFile(path.join(__dirname, "../views/index.html"))
-  } catch (err) {
-    console.log(err);
-    res.status(500).json(err);
-  }
-});
-
 /// ------------------- render login page ----------------------------
 
 router.get("/login", async (req, res) => {
@@ -53,7 +44,7 @@ router.get('/home', async (req, res) => {
     const allPark = await Park.findAll()
     const parks = allPark.map((place) => place.get({plain: true}))
     
-    res.status(200).render('homepage', { parks })
+    res.status(200).render('homepage', { parks, loggedIn: req.session.loggedIn})
   }catch(err) {
     console.log(err) 
     res.status(500).json(err)

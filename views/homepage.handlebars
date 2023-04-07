@@ -14,17 +14,23 @@
   <br><br>
   <img src="https://gastateparks.org/sites/default/files/parks/images/webmaps/webmap-2023-02.png" alt="Map of Georgia state parks" class="map">
 
-  <a href="/login">Login</a>
+
   <a href="/signup">Signup</a>
-  <a href="/logout">Logout</a>
+{{#if loggedIn}}
+  <button id="logOut">logout</button>
+{{else}}
+  <a href="/login"> login </a>
+{{/if}}
+
+
 
 <div>
-    {{each posts as |post| }}
+    {{#each parks as | park|  }}
     <div>
-        <h2>{{post.name}} </h2>
-        <div>{{post.county}} </div>
-        <img src="{{post.image}}">
-        <p> {{post.content}} </p>
+        <h2>{{park.name}} </h2>
+        <div>{{park.county}} </div>
+        <img class="parksimg" src="{{park.image}}">
+        <p> {{park.content}} </p>
     </div>
     {{/each}}
 </div>
@@ -40,7 +46,7 @@
 
   <hr>
 
-  <form action="XXXXXXXX" method="POST">
+  <form>
     <label for="parkname">Park Name:</label>
     <input type="text" id="title" name="title" required>
 
@@ -54,8 +60,7 @@
     <button type="submit">Submit</button>
   </form>
 
-  <script>
-    //js here
+  <script src="../js/logout.js"> 
   </script>
 
 </body>
