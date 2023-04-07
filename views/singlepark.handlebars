@@ -11,6 +11,25 @@
     </div>
   {{/each}}
 
+ {{#if loggedIn}}
+      <form>
+        <label for="rating"></label>
+        <input type="text"  id="rating"> 
+
+        <label for="review"></label>
+        <textarea
+          id="reviewContent"
+          name="review"
+          rows="10"
+          class="col-9"
+        ></textarea>
+        <br />
+        <button class="btn btn-dark" id="newReview"> Submit </button>
+      </form>
+    {{else}}
+      <h2> <a href="/login">Log in</a> to leave a review </h2>
+    {{/if}}
+
 </div>
 
  <script src="../js/review.js"></script> 
