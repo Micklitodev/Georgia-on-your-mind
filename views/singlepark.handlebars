@@ -7,4 +7,15 @@
         <p> {{post.content}} </p>
     </div>
     {{/each}}
+    <hr>
+
+  {{#each comments}}
+    <div>
+      <h3>{{this.title}}</h3>
+      <p>{{this.content}}</p>
+    </div>
+  {{/each}}
+
+  <hr>
+  
 </div>
