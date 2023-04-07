@@ -11,7 +11,7 @@ reviewBtn.addEventListener("click", async (e) => {
   const park_id = data[data.length-1];
 
 
-  await fetch("/api/review", {
+  await fetch("/api/newreview", {
     method: "POST",
     headers: {
       Accept: "application/json, text/plain, */*",
@@ -25,7 +25,7 @@ reviewBtn.addEventListener("click", async (e) => {
   }).then((res) => {
     console.log(res);
     if (res.status == 200) {
-      window.location.href = `/reviews`;
+      window.location.href = `/park/${park_id}`;
     }
   });
 });
