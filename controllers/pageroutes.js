@@ -1,24 +1,23 @@
 const router = require("express").Router();
-const { Park } = require("../models");
-const path = require('path')
+const { Park, Review } = require("../models");
+const path = require("path");
 
-/// ------------------------- render landing page ------------------------- 
+/// ------------------------- render landing page -------------------------
 
 router.get("/", async (req, res) => {
   try {
-     res.sendFile(path.join(__dirname, "../views/landing.html"))
+    res.sendFile(path.join(__dirname, "../views/landing.html"));
   } catch (err) {
     console.log(err);
     res.status(500).json(err);
   }
 });
 
-
 /// ------------------- render login page ----------------------------
 
 router.get("/login", async (req, res) => {
   try {
-     res.sendFile(path.join(__dirname, "../views/login.html"))
+    res.sendFile(path.join(__dirname, "../views/login.html"));
   } catch (err) {
     console.log(err);
     res.status(500).json(err);
@@ -29,7 +28,7 @@ router.get("/login", async (req, res) => {
 
 router.get("/signup", async (req, res) => {
   try {
-     res.sendFile(path.join(__dirname, "../views/signup.html"))
+    res.sendFile(path.join(__dirname, "../views/signup.html"));
   } catch (err) {
     console.log(err);
     res.status(500).json(err);
@@ -38,21 +37,47 @@ router.get("/signup", async (req, res) => {
 
 /// ----------------- Render All Parks -------------------------------
 
+router.get("/home", async (req, res) => {
+  try {
+    const allPark = await Park.findAll();
+    const parks = allPark.map((place) => place.get({ plain: true }));
 
-router.get('/home', async (req, res) => {
-  try{
-    const allPark = await Park.findAll()
-    const parks = allPark.map((place) => place.get({plain: true}))
-    
-    res.status(200).render('homepage', { parks, loggedIn: req.session.loggedIn})
-  }catch(err) {
-    console.log(err) 
-    res.status(500).json(err)
+    res
+      .status(200)
+      .render("homepage", { parks, loggedIn: req.session.loggedIn });
+  } catch (err) {
+    console.log(err);
+    res.status(500).json(err);
   }
-})
+});
 
+/// ------------------- Render Single Park -----------------------------
 
+router.get("/park/:id", async (req, res) => {
+  try {
+    const specificPark = await Park.findByPk(req.params.id, {
+      include: [{ model: Review }],
+    });
 
+    const review = specificPark.reviews.map((rev) => rev.get({ plain: true }));
+
+    const name = specificPark.dataValues.name;
+    const county = specificPark.dataValues.county;
+    const image = specificPark.dataValues.image;
+    const content = specificPark.dataValues.content;
+
+    res.status(200).render("singlepark", {
+      name,
+      county,
+      image,
+      content,
+      review,
+      loggedIn: req.session.loggedIn,
+    });
+  } catch (err) { 
+    console.log(err);
+    res.status(500).json(err);
+  }
+});
 
 module.exports = router;
- 

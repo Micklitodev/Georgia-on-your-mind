@@ -1,21 +1,35 @@
 <div>
-    {{each posts as |post| }}
-    <div>
-        <h2>{{post.name}} </h2>
-        <div>{{post.county}} </div>
-        <img src="{{post.image}}">
-        <p> {{post.content}} </p>
-    </div>
-    {{/each}}
-    <hr>
+    <h2>{{name}} </h2>
+    <div>{{county}} </div>
+    <img src="{{image}}">
+    <p> {{content}} </p>
 
-  {{#each comments}}
+  {{#each review as |review|}}
     <div>
-      <h3>{{this.title}}</h3>
-      <p>{{this.content}}</p>
+      <p>{{review.rating}}</p>
+      <p>{{review.content}}</p>
     </div>
   {{/each}}
 
-  <hr>
-  
+ {{#if loggedIn}}
+      <form>
+        <label for="rating"></label>
+        <input type="text"  id="rating"> 
+
+        <label for="review"></label>
+        <textarea
+          id="reviewContent"
+          name="review"
+          rows="10"
+          class="col-9"
+        ></textarea>
+        <br />
+        <button class="btn btn-dark" id="newReview"> Submit </button>
+      </form>
+    {{else}}
+      <h2> <a href="/login">Log in</a> to leave a review </h2>
+    {{/if}}
+
 </div>
+
+ <script src="../js/review.js"></script> 

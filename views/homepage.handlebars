@@ -22,29 +22,16 @@
   <a href="/login"> login </a>
 {{/if}}
 
-
-
 <div>
     {{#each parks as | park|  }}
-    <div>
+    <a href="/park/{{park.id}}">
         <h2>{{park.name}} </h2>
         <div>{{park.county}} </div>
         <img class="parksimg" src="{{park.image}}">
         <p> {{park.content}} </p>
-    </div>
+    </a>
     {{/each}}
 </div>
-
-  <hr>
-
-  {{#each comments}}
-    <div>
-      <h3>{{this.title}}</h3>
-      <p>{{this.content}}</p>
-    </div>
-  {{/each}}
-
-  <hr>
 
   <form>
     <label for="parkname">Park Name:</label>

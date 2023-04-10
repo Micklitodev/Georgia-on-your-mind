@@ -2,7 +2,7 @@ const { Review } = require('../models');
 
 const reviewData = [
     {
-        park_id: 1,
+        park_id: 4,
         user_id: 1,
         user_name: 'test1212',
         rating: 5,
