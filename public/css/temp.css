@@ -217,69 +217,6 @@
   }
   
 
-  /* /////orginal css//
-  /* body {
-    background: #fcd34d;
-    color: #fff;
-    padding: 25px;
-    font-family: sans-serif;
-  }
-  h1, h2 {
-    color: #14532d;
-  }
-  
-  p {
-    color: #022c22;
-  }
-  
-  .map {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-  }
-  
-  /* The Modal (background) */
-  /* .modal {
-    display: none; /* Hidden by default */
-    /* position: fixed; Stay in place */
-    /* z-index: 1; Sit on top */
-    /* left: 0;
-    top: 0; */
-    /* width: 100%; Full width */
-    /* height: 100%; Full height */
-    /* overflow: auto; Enable scroll if needed */
-    /* background-color: rgb(0,0,0); Fallback color */
-    /* background-color: rgba(0,0,0,0.4); Black w/ opacity */
-    /* padding-top: 60px; */
-  /* } */
-  
-  /* Modal Content/Box */
-  /* .modal-content {
-    background-color: #fefefe;
-    margin: 5px auto; /* 15% from the top and centered */
-    /* border: 1px solid #888;
-    width: 80%; Could be more or less, depending on screen size */
-  /* } */
-  
-  /* The Close Button */
-  /* .close { */
-    /* Position it in the top right corner outside of the modal */
-    /* position: absolute;
-    right: 25px;
-    top: 0;
-    color: #000;
-    font-size: 35px;
-    font-weight: bold; */
-  /* } */
-  
-  /* Close button on hover */
-  /* .close:hover,
-  .close:focus {
-    color: red;
-    cursor: pointer;
-  } */
-  
   /* Add Zoom Animation */
   /* .animate {
     -webkit-animation: animatezoom 0.6s;
@@ -295,3 +232,116 @@
     from {transform: scale(0)}
     to {transform: scale(1)}
     ///* */
+
+    /* Body styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+/* Header styles */
+h1, h2 {
+  color: #006699;
+}
+
+/* Map image styles */
+.map {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  display: block;
+}
+
+/* Form styles */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: block;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+button[type="submit"] {
+  background-color: #006699;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button[type="submit"]:hover {
+  background-color: #004466;
+}
+
+/* Comments section styles */
+h3 {
+  color: #006699;
+}
+
+.comments {
+  border-top: 1px solid #ccc;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+.comments div {
+  margin-bottom: 20px;
+}
+
+.comments p {
+  margin: 0;
+  padding: 0;
+}
+
+.img-fluid {
+  z-index: -1; 
+}
+.center{
+  text-align: center;
+
+}
+.parksimg{
+  display: block;
+  margin: auto;
+  width: 600px; /* Change this value to the desired size */
+  height: 200px; /* Change this value to the desired size */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.image-container {
+  margin-top: 20px;
+}
+
+a{
+  text-decoration: none;
+}
