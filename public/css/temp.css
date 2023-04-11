@@ -8,7 +8,7 @@
   
   /* Global styles */
   body {
-    font-family: 'Courier New', Courier, monospace
+    font-family: 'Courier New', Courier, monospace;
     /* font-size: 16px;
     line-height: 1.5; */
   }
@@ -108,6 +108,9 @@
     color: #fff;
     padding: 10px 0;
     text-align: center;
+    position: fixed; 
+    bottom: 0; 
+    width: 100vw; 
   }
 
   * {
@@ -322,6 +325,7 @@ h3 {
 
 .img-fluid {
   z-index: -1; 
+  position: fixed;
 }
 .center{
   text-align: center;
@@ -352,4 +356,23 @@ h3 {
 
 a{
   text-decoration: none;
+}
+
+
+.logbtn {
+position: absolute; 
+right: 10;
+}
+
+.reviewbox {
+  margin-left: 400px;
+  border: solid 1px  rgb(61, 61, 61);
+  border-radius: 5px;
+  padding: 5px;
+  background-color: rgb(255, 255, 255)
+}
+
+.sig {
+  font-size: 11px;
+  color: rgb(43, 94, 149);
 }

@@ -7,11 +7,14 @@
     </div>
 
   {{#each review as |review|}}
-    <div>
+    <div class="reviewbox col-6">
       <p class="text-center">{{review.rating}}</p>
       <p class="text-center">{{review.content}}</p>
+      <div class="sig"> 
       <p class="text-center"> {{review.user_name}}</p>
+      </div>
     </div>
+    <br>
   {{/each}}
 
  {{#if loggedIn}}
