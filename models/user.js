@@ -7,7 +7,7 @@ class User extends Model {
     return bcrypt.compareSync(inputPass, this.password);
   }
   userName() {
-    return this.username;
+    return this.user_name;
   }
 }
 
