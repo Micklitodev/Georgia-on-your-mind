@@ -10,4 +10,14 @@ const format_date = (date) => {
       ).getDate()}/${new Date(date).getFullYear()}`;
 }
 
-module.exports = {format_time,format_date};
+const isEqual = (var1, var2) => {
+    console.log(var1) 
+    console.log(var2)
+    if(var1 == var2) {
+        return true
+    } else {
+        return false
+    }
+};
+
+module.exports = {format_time,format_date, isEqual};

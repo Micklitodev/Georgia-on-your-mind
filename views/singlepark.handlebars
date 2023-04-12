@@ -44,19 +44,19 @@
     <br>
     <div class="sig">
       <p class="text-center"> User: {{review.user_name}}</p>
-    </div>
-    <p class="text-center">Rating: {{review.rating}}</p>
-    <p class="text-center">Description: {{review.content}}</p>
-    <button type="delete" class="delbtn btn btn-secondary" id="{{review.id}}">Delete Post</button>
+      </div>
+      <p class="text-center">Rating: {{review.rating}}</p>
+      <p class="text-center">Description: {{review.content}}</p>
 
-    <button type="update" class="updatebtn btn btn-secondary" id="{{review.id}}">Delete Post</button>
+{{#if (isEqual review.user_name ../user)}}
+   <button type="delete" class="delbtn btn btn-secondary" id="{{review.id}}">Delete Post</button>
+    <button type="update" class="updatebtn btn btn-secondary" id="{{review.id}}">Update Post</button>
+{{/if}}
 
-    <br>
-  </div>
+      <br>
+</div>
   <br>
   {{/each}}
 </div>
-
-
-
 </div>
+

@@ -65,6 +65,7 @@ router.get("/park/:id", async (req, res) => {
     const county = specificPark.dataValues.county;
     const image = specificPark.dataValues.image;
     const content = specificPark.dataValues.content;
+    const user = req.session.currentuser;
 
     res.status(200).render("singlepark", {
       name,
@@ -72,6 +73,7 @@ router.get("/park/:id", async (req, res) => {
       image,
       content,
       review,
+      user,
       loggedIn: req.session.loggedIn,
     });
   } catch (err) { 
