@@ -48,8 +48,37 @@
       <p class="text-center">Rating: {{review.rating}}</p>
       <p class="text-center">Description: {{review.content}}</p>
 
+           <div class="updatepanel">
+        <div class="updateform" id="{{review.id}}" style="display: none">
+          <label for="subject">Update Post!</label>
+          <br />
+          <input
+            class="input col-8"
+            type="text"
+            id="updatepostsub"
+            name="subject"
+          />
+          <br />
+          <br />
+          <label for="comment"></label>
+          <textarea
+            id="updatepostdescr"
+            name="comment"
+            class="col-9"
+            rows="10"
+          ></textarea>
+          <br />
+          <br />
+          <button class="inputUpdateFields btn btn-light"> Update </button>
+          <br />
+          <br />
+          <div id="cancelbtn"></div>
+        </div>
+      </div>
+
 {{#if (isEqual review.user_name ../user)}}
    <button type="delete" class="delbtn btn btn-secondary" id="{{review.id}}">Delete Post</button>
+   <br>
     <button type="update" class="updatebtn btn btn-secondary" id="{{review.id}}">Update Post</button>
 {{/if}}
 
@@ -59,4 +88,3 @@
   {{/each}}
 </div>
 </div>
-
