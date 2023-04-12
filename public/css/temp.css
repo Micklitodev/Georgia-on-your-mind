@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: #171515;
+    color: rgb(61, 61, 61);
   }
   
   /* Global styles */
@@ -334,8 +334,9 @@ h3 {
 .parksimg{
   display: block;
   margin: auto;
-  width: 600px; /* Change this value to the desired size */
-  height: 200px; /* Change this value to the desired size */
+  width: 800px; 
+  height: 200px; 
+  border-radius: 10px;
 }
 
 .container {
@@ -365,14 +366,24 @@ right: 10;
 }
 
 .reviewbox {
-  margin-left: 400px;
   border: solid 1px  rgb(61, 61, 61);
   border-radius: 5px;
   padding: 5px;
-  background-color: rgb(255, 255, 255)
+  background-color: rgb(134, 158, 138);
+  justify-content: center;
+  
 }
 
 .sig {
-  font-size: 11px;
-  color: rgb(43, 94, 149);
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.hide{
+  display: hide;
+}
+
+.spageImage{
+  border-radius: 10px;
+  margin: 10px;
 }
