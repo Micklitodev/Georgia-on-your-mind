@@ -23,4 +23,21 @@ router.post("/newreview", async (req, res) => {
   }
 });
 
+router.delete("/deletereview", async (req, res) => {
+  try {
+    const delRev = await Review.destroy({
+      where: {
+        id: req.body.id,
+      }
+    });
+    res.status(200).json(delRev);
+  }
+  catch (err) {
+    console.log(err)
+    res.status(500).json(err);
+  }
+})
+
 module.exports = router;
+
+
