@@ -47,13 +47,16 @@
       </div>
       <p class="text-center">Rating: {{review.rating}}</p>
       <p class="text-center">Description: {{review.content}}</p>
-      <button type="delete" class="delbtn btn btn-secondary" id="{{review.id}}">Delete Post</button>
+
+{{#if (isEqual review.user_name ../user)}}
+   <button type="delete" class="delbtn btn btn-secondary" id="{{review.id}}">Delete Post</button>
+{{else}}
+you messed up if your logged in to this user :'C
+{{/if}}
+
       <br>
     </div>
     <br>
   {{/each}}
   </div>
-
-
-
 </div>
