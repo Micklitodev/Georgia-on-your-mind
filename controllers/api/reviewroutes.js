@@ -26,7 +26,7 @@ router.delete("/deletereview", async (req, res) => {
   try {
     const delRev = await Review.destroy({
       where: {
-        id: req.body.id,
+        id: req.body.rev_id,
       },
     });
     res.status(200).json(delRev);

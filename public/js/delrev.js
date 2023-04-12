@@ -1,20 +1,28 @@
 const delbtn = document.querySelectorAll(".delbtn");
-console.log(delbtn);
+
+
+
 
 for (let del of delbtn) {
   del.addEventListener("click", async (e) => {
     e.preventDefault();
-    const park_id = e.target.id;
-    console.log(park_id);
+    
+    const rev_id = e.target.id;
+    console.log(rev_id);
 
-    await fetch("/api/dashboard", {
+    const url = window.location.href;
+    const data = url.split("/");
+    const park_id = data[data.length-1];
+
+
+    await fetch("/api/deletereview", {
       method: "DELETE",
       headers: {
         Accept: "application/json, text/plain, */*",
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        post_id: post_id,
+        rev_id: rev_id,
       }),
     }).then((res) => {
       console.log(res);
