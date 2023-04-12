@@ -49,7 +49,7 @@ const parkdata = [
         name: 'F. D. Roosevelt State Park',
         county: 'Harris',
         image: 'https://gastateparks.org/sites/default/files/styles/locationslidestyle/public/parks/locationslideshow/FDRoosevelt.jpg?itok=w06wyUJW',
-        content: `Franklin D. Roosevelt State Park is a 9,049-acre state park located approximately 40 miles southeast of New York City. It offers day-trippers a day of fun and relaxation with spacious picnic areas that can be reserved in advance, as well as more than 40 miles of hiking and backpacking trails. Dowdells Knob, where President Franklin D.Roosevelt sometimes picnicked and pondered world affairs, has a life-size sculpture of the president now welcoming visitors to the overlook.`
+        content: `F.D. Roosevelt State Park is a 9,049 acres Georgia state park located near Pine Mountain and Warm Springs. The park is named for former U.S. President Franklin Delano Roosevelt, who sought a treatment for his paralytic illness in nearby Warm Springs at the Little White House. The park is located along the Pine Mountain Range.`
     },
     {
         name: 'Florence Marina State Park',
@@ -172,7 +172,7 @@ const parkdata = [
     },
     {
         name: 'Mistletoe State Park',
-        county: 'Columiba',
+        county: 'Columbia',
         image: 'https://gastateparks.org/sites/default/files/styles/locationslidestyle/public/parks/locationslideshow/Mistletoe.jpg?itok=U80NPnmI',
         content: `Mistletoe State Park is a 1,972 acre Georgia state park located northwest of Augusta, Georgia on the southern shore of Lake Strom Thurmond. The park gets its name from Mistletoe Corners,[1] a local area where people gather to pick mistletoe during the winter holiday season. Its strategic location on the lake makes it one of the finest bass fishing spots in the nation. The park also offers public beaches and 8 miles of nature trails. The land on which the park is located is leased to Georgia by the United States Army Corps of Engineers.`
     },
@@ -190,7 +190,7 @@ const parkdata = [
     },
     {
         name: 'Providence Canyon State Park',
-        county: 'Steward',
+        county: 'Stewart',
         image: 'https://gastateparks.org/sites/default/files/styles/locationslidestyle/public/parks/locationslideshow/ProvidenceCanyon.jpg?itok=GS3mXVXI',
         content: `Providence Canyon State Outdoor Recreation Area is a 1,003-acre Georgia state park located in Stewart County in southwest Georgia, United States.[2] The park contains Providence Canyon, which is sometimes called Georgia's "Little Grand Canyon". It is considered one of the Seven Natural Wonders of Georgia. It is also home to the very rare plumleaf azalea.`
     },
@@ -207,7 +207,7 @@ const parkdata = [
         content: `Reed Bingham State Park is a 1,613 acre Georgia state park in Colquitt County and Cook County located 5 miles east of Ellenton. The park surrounds a 375 acre lake that is a tourist attraction in southern Georgia. Inside the park, visitors can hike the 3.5 mile long Coastal Plains Nature Trail, which goes through a baldcypress swamp, a pitcher plant bog, and sandhill area. The park also contains many animals, including the threatened gopher tortoise and the indigo snake. In addition, the park offers camping and fishing with special ponds for kids that are only open on specific dates.`
     },
     {
-        name: 'richard b. russell state park',
+        name: 'Richard B. Russell State Park',
         county: 'Elbert',
         image: 'https://gastateparks.org/sites/default/files/styles/locationslidestyle/public/parks/locationslideshow/RichardBRussell1.jpg?itok=Wm62qRzX',
         content: `Richard B. Russell State Park is a 2,508 acres state park located on the shore of Richard B. Russell Lake in Elbert County, Georgia. The park features the 18-hole Arrowhead Golf Course, as well as picnic shelters and a swimming beach.`
