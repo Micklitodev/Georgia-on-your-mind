@@ -46,12 +46,6 @@ const parkdata = [
         content: `Elijah Clark State Park is located on the western shore of 71,100-acre Clarks Hill Lake, one of the largest lakes in the Southeast. It is named for a frontiersman and Georgia war hero who led pioneers during the Revolutionary War. A log cabin replica displays furniture, utensils and tools circa 1780 and is open weekends April through November. Visitors can also view the graves of Clark and his wife, Hannah.`
     },
     {
-        name: 'Etowah Indian Mounds State Historic Site',
-        county: 'Bartow',
-        image: 'https://gastateparks.org/sites/default/files/styles/locationslidestyle/public/parks/locationslideshow/EtowahIndianMounds.jpg?itok=BCIJ0lsr',
-        content: `Etowah Indian Mounds State Historic Site is a 54-acre Mississippian culture site in the southeastern United States, home to several thousand Native Americans from 1000 A.D. to 1550 A.D., featuring six earthen mounds, a plaza, village site, borrow pits and defensive ditches. It symbolizes a society rich in ritual with its 63-foot flat-topped earthen knoll used as a platform for the home of the priest-chief; nobility were buried in elaborate costumes accompanied by items they would need in their after-lives; only 9 percent has been excavated but examination has revealed much about the people who lived here more than 500 years ago.`
-    },
-    {
         name: 'F. D. Roosevelt State Park',
         county: 'Harris',
         image: 'https://gastateparks.org/sites/default/files/styles/locationslidestyle/public/parks/locationslideshow/FDRoosevelt.jpg?itok=w06wyUJW',

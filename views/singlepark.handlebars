@@ -5,8 +5,12 @@
       <img class="spageImage text-center" src="{{image}}">
       <p class="text-center"> {{content}} </p>
 </div>
+<br>
+
 
  {{#if loggedIn}}
+ <h2 class="text-center">Write a Review!</h2>
+ <br>
  <div class="text-center">
   <form class="col-md-8">
   <div class="form-group">
@@ -39,8 +43,9 @@
     <div class=" container reviewbox col-8">
       <br>
        <div class="sig"> 
-      <p class="text-center"> User:{{review.user_name}}</p>
+      <p class="text-center"> User: {{review.user_name}}</p>
       </div>
+       <button type="delete" class="delbtn btn btn-primary" id="{{review.id}}">Delete Post</button>
       <p class="text-center">Rating: {{review.rating}}</p>
       <p class="text-center">Description: {{review.content}}</p>
     </div>
