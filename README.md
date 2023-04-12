@@ -16,7 +16,7 @@ The app will require park patrons to create a username and password after which 
   
 ## SCREENSHOTS
 
-<screenshots go here>
+![parkify landing page](https://user-images.githubusercontent.com/116689598/231603780-b20bf7fe-e2af-4d4d-92fe-63f178f21559.png)
 
 ## LINKS
 	*LINK TO REPO: https://github.com/BrianLucy/Georgia-on-your-mind
