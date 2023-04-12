@@ -1,7 +1,4 @@
-console.log("ready to update post");
-
 const updatebtn = document.querySelectorAll(".updatebtn");
-console.log(updatebtn);
 
 for (let update of updatebtn) {
   update.addEventListener("click", async (e) => {
@@ -13,6 +10,11 @@ for (let update of updatebtn) {
 }
 
 const resolveData = (eventID) => {
+
+  const url = window.location.href;
+  const data = url.split("/");
+  const park_id = data[data.length-1];
+
   const updateBtn = document.getElementById(eventID);
   const parent = updateBtn.parentNode;
   const form = parent.querySelector(".updateform");
@@ -21,25 +23,26 @@ const resolveData = (eventID) => {
   const newBtn = form.querySelector(".inputUpdateFields");
 
   newBtn.addEventListener("click", async () => {
-    const post_sub = form.querySelector("#updatepostsub").value;
-    const post_descr = form.querySelector("#updatepostdescr").value;
-    const post_id = eventID;
+    const rating = form.querySelector("#updatepostsub").value;
+    const content = form.querySelector("#updatepostdescr").value;
+    const review_id = eventID;
 
-    await fetch("/api/dashboard", {
+
+    await fetch("/api/updaterev", {
       method: "PUT",
       headers: {
         Accept: "application/json, text/plain, */*",
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        post_sub: post_sub,
-        post_descr: post_descr,
-        post_id: post_id,
+        rating: rating,
+        content: content, 
+        rev_id: review_id
       }),
     }).then((res) => {
       console.log(res);
       if (res.status == 200) {
-        window.location.href = "/dashboard";
+        window.location.href = `/park/${park_id}`;
       }
     });
   });
