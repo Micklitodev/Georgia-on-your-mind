@@ -377,9 +377,11 @@ display: hide;
 }
 
 .spageImage{
-border-radius: 10px;
-margin: 10px;
-}
+  border-radius: 10px;
+  margin: 10px;
+  width:1000px;
+  height:300px;
+  }
 
 #newReview, #signUpBtn, #submit{
 background-color: rgb(134, 158, 138);
