@@ -45,9 +45,10 @@
        <div class="sig"> 
       <p class="text-center"> User: {{review.user_name}}</p>
       </div>
-       <button type="delete" class="delbtn btn btn-primary" id="{{review.id}}">Delete Post</button>
       <p class="text-center">Rating: {{review.rating}}</p>
       <p class="text-center">Description: {{review.content}}</p>
+      <button type="delete" class="delbtn btn btn-secondary" id="{{review.id}}">Delete Post</button>
+      <br>
     </div>
     <br>
   {{/each}}
