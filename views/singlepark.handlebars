@@ -1,4 +1,5 @@
 <div>
+<br>
   <div class="container">
     <h2 class="text-center">{{name}} </h2>
     <div class="text-center">County: {{county}} </div>
@@ -30,8 +31,7 @@
       <button type="submit" class="btn btn-primary" id="newReview">Submit</button>
     </form>
   </div>
-</div>
-</div>
+
 {{else}}
 <h2 class="text-center"> <a href="/login">Log in</a> to leave a review </h2>
 {{/if}}
@@ -44,11 +44,11 @@
     <br>
     <div class="sig">
       <p class="text-center"> User: {{review.user_name}}</p>
-      </div>
+    </div>
       <p class="text-center">Rating: {{review.rating}}</p>
       <p class="text-center">Description: {{review.content}}</p>
 
-           <div class="updatepanel">
+      <div class="updatepanel">
         <div class="updateform" id="{{review.id}}" style="display: none">
           <label for="subject">Update Post!</label>
           <br />
