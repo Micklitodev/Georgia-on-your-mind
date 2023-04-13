@@ -71,6 +71,16 @@ nav ul li a {
 
 
 }
+.hero-signup {
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  border-radius: 25px;
+  padding: 20px;
+}
 
 .divclass {
   background-color: rgb(134, 158, 138);
