@@ -346,6 +346,11 @@ background-color: rgb(134, 158, 138);
 border-radius: 10px;
 }
 
+.loginImage{
+  background-image: url(../../images/Hikinglogin.jpg);
+  background-color: rgb(134, 158, 138);
+}
+
 .container2 {
   display: flex;
   flex-direction: column;
