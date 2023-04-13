@@ -1,6 +1,6 @@
 # Georgia-on-your-mind
 
-## DESCRIPTION:
+## Description:
 Georgia state park patrons need a central location where they can leave reviews about previous experiences and read reviews from other like-minded outdoor enthusiasts and state park rangers as they plan future trips
 
 The app will require park patrons to create a username and password after which they will have access to a central location for leaving and reading reviews on Georgia’s state parks. 
@@ -14,18 +14,18 @@ The app will require park patrons to create a username and password after which 
   - [ Tests ](#tests)
   - [ License ](#license)
   
-## SCREENSHOTS
+## Screenshot
 
-![parkify landing page](https://user-images.githubusercontent.com/116689598/231603780-b20bf7fe-e2af-4d4d-92fe-63f178f21559.png)
+![parkify landing page](./images/parkifyss.png)
 
-## LINKS
+## Link
 	*LINK TO REPO: https://github.com/BrianLucy/Georgia-on-your-mind
 	*LINK TO DEPLOYED PAGE: [https://brianlucy.github.io/georgia-on-your-mind/](https://parkify.herokuapp.com/)
 
-## INSTALLATION
+## Installation
   To install simply fork the repo, and clone down to your local machine. Then in the CLI at relative dir run 'npm i' to get all dependancies required for sucessfull run of the package. Download mySQL, then create db by using 'SOURCE db/schema.sql' in mySQL shell. Ensure that you have updated the /config/connection.js to use your mySQL with sequelize. Finally run 'npm run seed' to seed the db with default data.
   
-## USAGE
+## Usage
 To use the package as a consumer, Simply visit the deployed link and create an account. After signing up, You can blog by clicking the create button above the posted blogs, on the home page. Comment by clicking an existing blog then on the view of the blog where you see the comments, below that you will have the option to make a comment, visit the dashboard to view your Blogs from there there will be two buttons that will give you the option to update or delete your blogs postings. 
 
   To use the package as a Developer, after following the installation steps above, at the root of the project directory run command ' npm start ' in your CLI, then click the link in the CLI to view site from localhost.
@@ -41,7 +41,7 @@ Each stepped up in many ways to make contribtions that made this project a succe
   
   Endpoints were tested with Insomnia, If you should find any issues, see above on contibuting guidlines, or submit a issue with a detailed explanation on how to recreate the bug.
   
-## LICENSE
+## License
 
   MIT [![License](https://img.shields.io/badge/license-MIT-green)](./LICENSE) 
 
