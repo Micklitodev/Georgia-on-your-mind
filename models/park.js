@@ -12,21 +12,21 @@ Park.init(
       autoIncrement: true,
     },
     name: {
-        type: DataTypes.STRING,
-        allowNull: false,
+      type: DataTypes.STRING,
+      allowNull: false,
     },
     county: {
       type: DataTypes.STRING,
       allowNull: false,
     },
     image: {
-        type:DataTypes.STRING,
-        allowNull:false,
+      type: DataTypes.STRING,
+      allowNull: false,
     },
     content: {
-        type:DataTypes.TEXT,
-        allowNull:false,
-    }
+      type: DataTypes.TEXT,
+      allowNull: false,
+    },
   },
   {
     sequelize,

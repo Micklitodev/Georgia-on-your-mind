@@ -13,8 +13,6 @@ router.delete("/logout", (req, res) => {
   }
 });
 
-
-
 // create new user
 
 router.post("/signup", (req, res) => {
@@ -36,9 +34,7 @@ router.post("/signup", (req, res) => {
   }
 });
 
-
-
-//login route 
+//login route
 
 router.post("/login", async (req, res) => {
   try {

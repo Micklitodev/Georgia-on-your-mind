@@ -1,11 +1,10 @@
-console.log('LOGOUT IS HITTING')
+console.log("LOGOUT IS HITTING");
 const btn = document.getElementById("logOut");
 
 btn.addEventListener("click", async (e) => {
-    e.preventDefault();
+  e.preventDefault();
 
-
-await fetch("/api/logout", {
+  await fetch("/api/logout", {
     method: "DELETE",
     headers: {
       Accept: "application/json, text/plain, */*",
