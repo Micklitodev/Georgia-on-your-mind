@@ -1,4 +1,4 @@
-<br>
+<br />
 <div class="container col-6">
   <br />
   <h1>Parkify</h1>
@@ -6,24 +6,24 @@
   <h5>Click on a park to leave a review!</h5>
   <br />
 </div>
-<br>
-<img class='homepagebgimg' src="./images/cloudland.jpg" > 
+<br />
+<img class="homepagebgimg" src="./images/cloudland.jpg" />
 <div>
   {{#each parks as |park|}}
-    
+
     <a href="/park/{{park.id}}">
-    <div class="container">
-      <br>
-      {{!-- <a href="/park/{{park.id}}"> --}}
+      <div class="container">
+        <br />
+        {{!-- <a href="/park/{{park.id}}"> --}}
         <h2 class="text-center">{{park.name}} </h2>
-      {{!-- </a> --}}
-      <div class="text-center font-weight-bold">County: {{park.county}} </div>
-      <img class="parksimg rounded img-fluid"  src="{{park.image}}" />
-      <br />
-      <p class="col-md-11">{{park.content}} </p>
-</div>
+        {{! </a> }}
+        <div class="text-center font-weight-bold">County: {{park.county}} </div>
+        <img class="parksimg rounded img-fluid" src="{{park.image}}" />
+        <br />
+        <p class="col-md-11">{{park.content}} </p>
+      </div>
     </a>
     <br />
     <br />
   {{/each}}
-</div> 
+</div>
