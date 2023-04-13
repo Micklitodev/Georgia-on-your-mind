@@ -12,7 +12,7 @@ Review.init(
       autoIncrement: true,
     },
     date: {
-        type: DataTypes.DATE,
+      type: DataTypes.DATE,
     },
     park_id: {
       type: DataTypes.INTEGER,
@@ -20,8 +20,7 @@ Review.init(
       references: {
         model: "park",
         key: "id",
-
-      }
+      },
     },
     user_id: {
       type: DataTypes.INTEGER,
@@ -34,11 +33,11 @@ Review.init(
       type: DataTypes.STRING,
     },
     rating: {
-        type:DataTypes.INTEGER,
+      type: DataTypes.INTEGER,
     },
     content: {
-        type:DataTypes.STRING,
-    }
+      type: DataTypes.STRING,
+    },
   },
   {
     sequelize,

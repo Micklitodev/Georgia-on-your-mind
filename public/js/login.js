@@ -1,10 +1,10 @@
-const submitButton = document.getElementById("submit"); //target the submit button
+const submitButton = document.getElementById("submit");
 
 submitButton.addEventListener("click", async (e) => {
   e.preventDefault();
 
-  const email = document.getElementById("email").value;//get user-input value for email
-  const password = document.getElementById("password").value;//get user-input value for password
+  const email = document.getElementById("email").value;
+  const password = document.getElementById("password").value;
 
   await fetch("/api/login", {
     method: "POST",
@@ -22,5 +22,5 @@ submitButton.addEventListener("click", async (e) => {
       window.location.href = "/home";
     }
   });
-  console.log("Submitted!")
+  console.log("Submitted!");
 });

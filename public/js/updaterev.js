@@ -10,10 +10,9 @@ for (let update of updatebtn) {
 }
 
 const resolveData = (eventID) => {
-
   const url = window.location.href;
   const data = url.split("/");
-  const park_id = data[data.length-1];
+  const park_id = data[data.length - 1];
 
   const updateBtn = document.getElementById(eventID);
   const parent = updateBtn.parentNode;
@@ -27,7 +26,6 @@ const resolveData = (eventID) => {
     const content = form.querySelector("#updatepostdescr").value;
     const review_id = eventID;
 
-
     await fetch("/api/updaterev", {
       method: "PUT",
       headers: {
@@ -36,8 +34,8 @@ const resolveData = (eventID) => {
       },
       body: JSON.stringify({
         rating: rating,
-        content: content, 
-        rev_id: review_id
+        content: content,
+        rev_id: review_id,
       }),
     }).then((res) => {
       console.log(res);

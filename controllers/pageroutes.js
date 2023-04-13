@@ -76,7 +76,7 @@ router.get("/park/:id", async (req, res) => {
       user,
       loggedIn: req.session.loggedIn,
     });
-  } catch (err) { 
+  } catch (err) {
     console.log(err);
     res.status(500).json(err);
   }
