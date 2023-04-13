@@ -29,6 +29,7 @@
     "handlebars": "^4.7.6",
     "mysql2": "^2.2.5",
     "node": "^18.15.0",
+    "particles.js": "^2.0.0",
     "sequelize": "^6.3.5"
   }
 }
