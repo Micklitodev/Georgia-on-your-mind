@@ -1,21 +1,28 @@
-<div class="container2">
+<br>
+<div class="container col-6">
   <br />
   <h1>Parkify</h1>
   <h2>Georgia State Park Review Hub</h2>
+  <h5>Click on a park to leave a review!</h5>
   <br />
 </div>
+<br>
 <img class='homepagebgimg' src="./images/cloudland.jpg" > 
 <div>
   {{#each parks as |park|}}
+    
+    <a href="/park/{{park.id}}">
     <div class="container">
-      <a href="/park/{{park.id}}">
+      <br>
+      {{!-- <a href="/park/{{park.id}}"> --}}
         <h2 class="text-center">{{park.name}} </h2>
-      </a>
+      {{!-- </a> --}}
       <div class="text-center font-weight-bold">County: {{park.county}} </div>
-      <img class="parksimg" src="{{park.image}}" />
+      <img class="parksimg rounded img-fluid"  src="{{park.image}}" />
       <br />
-      <p class="col-md-6">{{park.content}} </p>
-    </div>
+      <p class="col-md-11">{{park.content}} </p>
+</div>
+    </a>
     <br />
     <br />
   {{/each}}

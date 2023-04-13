@@ -64,9 +64,11 @@ nav ul li a {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  background-color: rgba(164, 183, 167, 0.5);
+  background-color:  rgba(164, 183, 167, 0.5);
   border-radius: 25px;
   padding: 20px;
+
+
 }
 .hero-signup {
   position: absolute;
@@ -74,16 +76,13 @@ nav ul li a {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+  background-color:  rgba(164, 183, 167, 0.5);
   border-radius: 25px;
-  padding: 20px;
+  padding: 0px 40px;
+
+
 }
 
-.divclass {
-  background-color: rgb(134, 158, 138);
-  border-radius: 25px;
-  text-align: center;
-  margin: auto;
-}
 .hero-content h1 {
   font-size: 48px;
   margin-bottom: 20px;
@@ -236,21 +235,6 @@ footer {
   }
 }
 
-/* Add Zoom Animation */
-/* .animate {
-  -webkit-animation: animatezoom 0.6s;
-  animation: animatezoom 0.6s */
-/* } */
-
-/* @-webkit-keyframes animatezoom {
-  from {-webkit-transform: scale(0)}
-  to {-webkit-transform: scale(1)} */
-/* } */
-
-/* @keyframes animatezoom {
-  from {transform: scale(0)}
-  to {transform: scale(1)}
-  ///* */
 
 /* Body styles */
 .bodystyle {
@@ -323,10 +307,10 @@ button[type="submit"]:hover {
   padding: 0;
 }
 
-.img-fluid {
-  z-index: -1;
+.img-fluids {
+  z-index: -1; 
   position: fixed;
-}
+  }
 .center {
   text-align: center;
 }
@@ -342,14 +326,10 @@ button[type="submit"]:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(134, 158, 138);
+  background-color: rgb(134, 158, 138, 0.8);
   border-radius: 10px;
 }
 
-.loginImage {
-  background-image: url(../../images/Hikinglogin.jpg);
-  background-color: rgb(134, 158, 138);
-}
 
 .container2 {
   display: flex;
@@ -371,6 +351,10 @@ button[type="submit"]:hover {
 
 a {
   text-decoration: none;
+}
+a:hover{
+  color:rgba(103, 125, 103, 1);
+  
 }
 
 .logbtn {
@@ -395,12 +379,10 @@ a {
   display: hide;
 }
 
-.spageImage {
+.spageImage{
   border-radius: 10px;
   margin: 10px;
-  width: 1000px;
-  height: 300px;
-}
+  }
 
 #newReview,
 #signUpBtn,
