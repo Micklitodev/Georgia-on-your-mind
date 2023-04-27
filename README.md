@@ -22,8 +22,7 @@ The app will require park patrons to create a username and password after which 
 
 ## Link
 
-    *LINK TO REPO: https://github.com/BrianLucy/Georgia-on-your-mind
-    *LINK TO DEPLOYED PAGE: [https://brianlucy.github.io/georgia-on-your-mind/](https://parkify.herokuapp.com/)
+    [Click Here](https://parkify.herokuapp.com/) to go to the repo link.
 
 ## Installation
 
