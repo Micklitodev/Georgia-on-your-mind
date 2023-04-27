@@ -22,7 +22,7 @@ The app will require park patrons to create a username and password after which 
 
 ## Link
 
-    [Click Here](https://parkify.herokuapp.com/) to go to the repo link.
+[Click Here](https://parkify.herokuapp.com/) to go to the repo link.
 
 ## Installation
 
